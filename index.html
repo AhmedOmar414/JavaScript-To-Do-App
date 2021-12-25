@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contianer">
+        <h1>To Do List</h1>
+        <div class="formm">
+            <form>
+                <input type="text" name="" class="to-do" placeholder="Add your task here">
+                <button class="btn"><i class="fas fa-plus-square"></i></button>
+            </form>
+            <div class="select">
+                <select name="filter" class="filter">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </div>
+        <div class="todo-list-contianer">
+            <h2>Tasks list</h2>
+            <p class="para">No Tasks Press <i class="fas fa-plus-square"></i> To Add task </p>
+            <ul class="ul-elments"></ul>
+        </div>
+    </div>
+
+    <!-- Java Script Code -->
+    <script src="./app.js"></script>
+</body>
+
+</html>

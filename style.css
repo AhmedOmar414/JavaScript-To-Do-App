@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img.jpg);
+    background-size: cover;
+    /* background-image: linear-gradient(to left, rgb(10, 164, 202), rgb(10, 225, 233)); */
+    height: 100vh;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contianer {
+    /* margin-top: 200px; */
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+form {
+    background-color: white;
+}
+
+form input,
+button {
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 25px;
+}
+
+form input {
+    color: rgb(90, 89, 89);
+}
+
+form input::placeholder {
+    font-size: 20px;
+    color: rgb(202, 199, 199);
+}
+
+form input:focus {
+    outline: none;
+}
+
+form button {
+    color: rgb(8, 149, 184);
+    background-color: white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+form button:hover {
+    color: white;
+    background-color: rgb(8, 149, 184);
+}
+
+.contianer h1 {
+    word-spacing: -7px;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+
+.formm {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.todo-list-contianer {
+    padding-top: 40px;
+}
+
+.todo-list-contianer h2 {
+    text-align: center;
+}
+
+.todo-list-contianer p {
+    text-align: center;
+}
+
+.ul-elments {
+    min-width: 500px;
+}
+
+.para {
+    padding-top: 60px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.863);
+}
+
+.para i {
+    padding: 0 6px;
+}
+
+.ul-elments .inner-div {
+    display: flex;
+    background-color: white;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.ul-elments .inner-div li {
+    list-style: none;
+    flex: 1;
+    color: rgb(78, 77, 77);
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.ul-elments .inner-div .cpmpleted_btn {
+    color: white;
+    background-color: rgb(14, 204, 14);
+    cursor: pointer;
+}
+
+.ul-elments .inner-div .trash_btn {
+    color: white;
+    background-color: rgb(248, 21, 21);
+    cursor: pointer;
+}
+
+
+/* disable the event which done when 
+the button contain the icon pressed */
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: .5s ease;
+}
+
+.remove {
+    transform: translateY(50px) rotate(20deg);
+    opacity: 0;
+    transition: .8s;
+    text-decoration: line-through;
+}
+
+select {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    width: 80px;
+    padding: 15px 0;
+    color: rgb(6, 110, 110);
+}
